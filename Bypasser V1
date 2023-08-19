@@ -261,6 +261,7 @@ local VadBypasses = {
     },
 }
 
+
 local Cipher = VadBypasses["Words"] or {}
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua"))() -- Anti Screenshot
@@ -274,13 +275,13 @@ local UserInputService = game:GetService("UserInputService")
 local DevTools = loadstring(game:HttpGet("https://raw.githubusercontent.com/05-4/DevTools/main/index.lua"))()
 
 local Window = DevTools:Init({
-    Name = "Vadrifts",
-    Title = "Vadrifts",
-    Subtitle = "Bypasser",
+    Name = "StormClide",
+    Title = "StormClide Bypasser",
+    Subtitle = "Our Bypass",
     LoadingBackgroundImage = "rbxassetid://13738082890",
     Options = {
         KillYourself = false,
-        FOVAnimations = false,
+        FOVAnimations = true,
     }
 })
 
@@ -339,7 +340,7 @@ for TabName, _ in next, VadBypasses do
 end
 
 Home:CreateSection("Credits")
-Home:CreateLabel("Owners\n\n  •   sx_ntii\n  •   Jay\n\nProgramming\n\n  •   Blukez\n  •   05_4\n  •   xula\n\nBypasses\n\n  •   sx_ntii\n  •   goku\n  •   heat\n\nUser Interface\n\n  •   05_4\n  •   Blukez")
+Home:CreateLabel("Owners\n\n  •   StormClide\n  •   Icy\n\nProgramming\n\n  •   None\n  •   None\n  •   None\n\nBypasses\n\n  •   None\n  •   None\n  •   None\n\nUser Interface\n\n  •   None\n  •   None")
 
 Home:CreateSection("Changelog")
 Home:CreateLabel("Update v2.6\n\n  •   Updated layout\n  •   100+ new bypasses\n  •   Bug Fixes")
@@ -367,7 +368,7 @@ local tab = {
     ["p"] = 0x0440,
     ["x"] = 0x0445,
     ["y"] = 0x0443,
-    ["s"] = 0x0455
+    ["s"] = 0x0455,
 }
 
 local function bypassString(v)
@@ -447,9 +448,9 @@ for TabName, Bypasses in next, VadBypasses do
         if loaded > 9 then
             task.spawn(function()
                 cButton(Bypass)
-            end)
-
             
+            end)
+        continue()
         end
 
         cButton(Bypass)
