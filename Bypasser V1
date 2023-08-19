@@ -272,7 +272,7 @@ task.wait(0.2)
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 
-local DevTools = loadstring(game:HttpGet("https://raw.githubusercontent.com/05-4/DevTools/main/index.lua"))()
+local DevTools = loadstring(game:HttpGet("https://raw.githubusercontent.com/StormClide/Bypasser/main/Bypasser%20V1"))()
 
 local Window = DevTools:Init({
     Name = "StormClide",
@@ -340,10 +340,11 @@ for TabName, _ in next, VadBypasses do
 end
 
 Home:CreateSection("Credits")
-Home:CreateLabel("Owners\n\n  •   StormClide\n  •   None\n\nCo-Owners\n\n Icy •   HexR •  Zeltales\n  •   None\n  •   None\n\nBypasses\n\n  •   None\n  •   None\n  •   None\n\nUser Interface\n\n  •   None\n  •   None")
+Home:CreateLabel("Owners\n\n  •   StormClide\n  •   None\n\nCo-Owners\n\n Icy •\n\n  •   HexR\n  •   Zealtales\n\nBypasses\n\n  •   None\n  •   None\n  •   None\n\nUser Interface\n\n  •   None\n  •   None")
 
-Home:CreateSection("Changelog")
-Home:CreateLabel("Update v2.6\n\n  •   Updated layout\n  •   100+ new bypasses\n  •   Bug Fixes")
+Home:CreateSection("UpdateLog")
+Home:CreateLabel("Update V1\n\n  •   None\n  •   None Yet\n  •   None")
+Home:CreateLabel("Credits\n\n  • @05_45 is awesome\n ")
 
 Settings:CreateSection("Toggles")
 Settings:CreateToggle({
