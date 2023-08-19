@@ -272,7 +272,7 @@ task.wait(0.2)
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 
-local DevTools = loadstring(game:HttpGet("https://raw.githubusercontent.com/StormClide/Bypasser/main/Bypasser%20V1"))()
+local DevTools = loadstring(game:HttpGet("https://raw.githubusercontent.com/05-4/DevTools/main/index.lua"))()
 
 local Window = DevTools:Init({
     Name = "StormClide",
